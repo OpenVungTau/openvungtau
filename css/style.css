@@ -649,3 +649,32 @@ dialog::backdrop { background: rgb(20 14 8 / 0.55); }
 @media (prefers-reduced-motion: reduce) {
   .hero h1, .sign, .entry, .sticky, .note, .polaroid { transition: none; }
 }
+
+/* ---------- Suggest widget ---------- */
+
+.nav-suggest { display: none; min-height: 40px; padding: 0 16px; }
+@media (min-width: 720px) { .nav-suggest { display: inline-flex; } }
+
+.channels { list-style: none; margin: 22px 0 0; padding: 0; display: grid; gap: 10px; }
+.channel {
+  display: grid;
+  grid-template-columns: 24px auto 1fr;
+  align-items: center;
+  gap: 4px 12px;
+  min-height: 56px;
+  padding: 10px 16px;
+  background: var(--paper-2);
+  border: 1px solid var(--paper-edge);
+  border-radius: var(--radius);
+  color: var(--ink);
+  text-decoration: none;
+}
+.channel:hover { border-color: var(--clay); box-shadow: var(--shadow-sm); }
+.channel svg { color: var(--clay-ink); }
+.channel-name { font-weight: 700; }
+.channel-note { color: var(--ink-muted); font-size: 0.92rem; text-align: right; }
+@media (max-width: 479px) {
+  .channel { grid-template-columns: 24px 1fr; }
+  .channel-note { grid-column: 2; text-align: left; }
+}
+.suggest-hint { margin-top: 24px; font-size: 0.95rem; }

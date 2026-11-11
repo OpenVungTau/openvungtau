@@ -23,12 +23,13 @@ about.html        Son's welcome page
 css/style.css     notebook look (light/dark, mobile-first)
 js/i18n.js        language (remembered), theme, header links, shared by both pages
 js/app.js         places page logic
+js/suggest.js     "Suggest a place" widget (Zalo, WhatsApp, Telegram, GitHub)
 i18n/<lang>.json  every UI string and the About text, one file per language
 data/places.json  all place data
 images/           photos used by places (optional, you add this folder)
 ```
 
-Set `REPO_URL` at the top of `js/i18n.js` to your GitHub repository. It drives the "GitHub" and "Suggest a place" links.
+`REPO_URL` at the top of `js/i18n.js` is the GitHub repository. The contact channels in the "Suggest a place" widget are listed at the top of `js/suggest.js`; every URL there must be `https`.
 
 ## Deploy on GitHub Pages
 

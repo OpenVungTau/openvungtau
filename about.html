@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Patrick+Hand&display=swap">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/i18n.js" defer></script>
+  <script src="js/suggest.js" defer></script>
 </head>
 <body>
   <div class="sheet">
@@ -27,6 +28,7 @@
       <nav class="site-nav" data-i18n-label="nav.label" aria-label="Main">
         <a href="index.html" data-i18n="nav.places">Places</a>
         <a href="about.html" aria-current="page" data-i18n="nav.about">About Son</a>
+        <button class="btn btn-primary nav-suggest" type="button" data-suggest data-i18n="nav.suggest">Suggest a place</button>
         <label class="lang">
           <span class="visually-hidden" data-i18n="nav.lang">Language</span>
           <select id="lang-select"><option value="en">English</option></select>
@@ -81,7 +83,7 @@
         </aside>
 
         <div class="empty-actions about-actions">
-          <a class="btn btn-primary" data-suggest-link href="#" rel="noopener" target="_blank" data-i18n="about.cta">Suggest a place</a>
+          <button class="btn btn-primary" type="button" data-suggest data-i18n="about.cta">Suggest a place</button>
           <a class="btn" href="index.html" data-i18n="about.back">Browse the places</a>
         </div>
       </div>
@@ -91,7 +93,7 @@
       <p data-i18n="footer.note">Every entry lives in a public file on GitHub, so every change is visible. Prices, hours and wifi change, so check before you go.</p>
       <p class="footer-links">
         <a data-repo-link href="#" rel="noopener" target="_blank" data-i18n="nav.github">GitHub</a>
-        <a data-suggest-link href="#" rel="noopener" target="_blank" data-i18n="nav.suggest">Suggest a place</a>
+        <button class="link-btn" type="button" data-suggest data-i18n="nav.suggest">Suggest a place</button>
       </p>
     </footer>
   </div>

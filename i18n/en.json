@@ -109,5 +109,13 @@
   "about.areasTitle": "Area names",
   "about.areasText": "Bãi Trước is Front Beach, Bãi Sau is Back Beach, Bãi Dâu is Dau Beach. Phường 1, Phường 2 and Phường Thắng Tam are central districts. I keep the Vietnamese names so you can read them on signs and tell your driver.",
   "about.cta": "Suggest a place",
-  "about.back": "Browse the places"
+  "about.back": "Browse the places",
+  "suggest.title": "Suggest a place",
+  "suggest.lead": "Know a spot that should be here? Send it to Son any of these ways.",
+  "suggest.hint": "Please include the name, the area, what you ate or did, and the month you went. A photo helps.",
+  "suggest.zalo": "Message Son on Zalo",
+  "suggest.whatsapp": "Message Son on WhatsApp",
+  "suggest.telegram": "Message Son on Telegram",
+  "suggest.github": "Edit data/places.json and open a pull request",
+  "suggest.close": "Close"
 }

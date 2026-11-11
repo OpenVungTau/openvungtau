@@ -158,8 +158,6 @@ const OVT = (() => {
       select.addEventListener("change", () => setLang(select.value));
     }
     document.querySelectorAll("[data-repo-link]").forEach((a) => (a.href = REPO_URL));
-    const suggest = `${REPO_URL}/issues/new?title=${encodeURIComponent("Suggest a place: ")}`;
-    document.querySelectorAll("[data-suggest-link]").forEach((a) => (a.href = suggest));
   }
 
   const ready = (async () => {

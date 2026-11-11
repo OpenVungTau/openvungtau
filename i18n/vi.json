@@ -109,5 +109,13 @@
   "about.areasTitle": "Tên các khu vực",
   "about.areasText": "Bãi Trước là Front Beach, Bãi Sau là Back Beach, Bãi Dâu là Dau Beach. Phường 1, Phường 2 và Phường Thắng Tam là các phường trung tâm. Mình giữ tên tiếng Việt để bạn đọc được trên biển hiệu và nói với tài xế.",
   "about.cta": "Gợi ý địa điểm",
-  "about.back": "Xem các địa điểm"
+  "about.back": "Xem các địa điểm",
+  "suggest.title": "Gợi ý địa điểm",
+  "suggest.lead": "Bạn biết chỗ nào nên có ở đây? Gửi cho Son theo một trong các cách sau.",
+  "suggest.hint": "Cho mình tên quán, khu vực, món bạn đã ăn hoặc việc đã làm, và tháng bạn đến. Có ảnh thì càng tốt.",
+  "suggest.zalo": "Nhắn Son qua Zalo",
+  "suggest.whatsapp": "Nhắn Son qua WhatsApp",
+  "suggest.telegram": "Nhắn Son qua Telegram",
+  "suggest.github": "Sửa data/places.json rồi mở pull request",
+  "suggest.close": "Đóng"
 }

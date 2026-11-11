@@ -109,5 +109,13 @@
   "about.areasTitle": "Названия районов",
   "about.areasText": "Bãi Trước — это Front Beach, Bãi Sau — Back Beach, Bãi Dâu — Dau Beach. Phường 1, Phường 2 и Phường Thắng Tam — центральные районы. Я оставляю вьетнамские названия, чтобы вы могли прочитать их на вывесках и назвать водителю.",
   "about.cta": "Предложить место",
-  "about.back": "Смотреть места"
+  "about.back": "Смотреть места",
+  "suggest.title": "Предложить место",
+  "suggest.lead": "Знаете место, которое здесь должно быть? Отправьте его Son любым из способов ниже.",
+  "suggest.hint": "Напишите название, район, что вы ели или делали, и месяц визита. Фото очень поможет.",
+  "suggest.zalo": "Написать Son в Zalo",
+  "suggest.whatsapp": "Написать Son в WhatsApp",
+  "suggest.telegram": "Написать Son в Telegram",
+  "suggest.github": "Отредактировать data/places.json и открыть pull request",
+  "suggest.close": "Закрыть"
 }

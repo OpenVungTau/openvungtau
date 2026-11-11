@@ -109,5 +109,13 @@
   "about.areasTitle": "区域名称",
   "about.areasText": "Bãi Trước 是前滩(Front Beach),Bãi Sau 是后滩(Back Beach),Bãi Dâu 是 Dau 海滩。Phường 1、Phường 2 和 Phường Thắng Tam 是市中心的街区。我保留越南语名称，方便你在招牌上辨认，也方便告诉司机。",
   "about.cta": "推荐地点",
-  "about.back": "浏览地点"
+  "about.back": "浏览地点",
+  "suggest.title": "推荐地点",
+  "suggest.lead": "你知道哪里应该加进来吗？用下面任意一种方式告诉 Son。",
+  "suggest.hint": "请告诉我名称、所在区域、你吃了或做了什么，以及去的月份。有照片更好。",
+  "suggest.zalo": "用 Zalo 给 Son 发消息",
+  "suggest.whatsapp": "用 WhatsApp 给 Son 发消息",
+  "suggest.telegram": "用 Telegram 给 Son 发消息",
+  "suggest.github": "编辑 data/places.json 并提交 pull request",
+  "suggest.close": "关闭"
 }
