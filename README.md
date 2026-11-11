@@ -34,7 +34,7 @@ images/           logo files (logo-horizontal*.png, icon.png) and photos used by
 
 ## Live cam
 
-The live cam section (home and About pages) embeds the 24/7 YouTube live stream. The video ID and channel link are at the top of `js/livecam.js`; if the stream ever gets a new URL, change `videoId` there. The player loads only after a visitor presses play, through `youtube-nocookie.com`, so nobody talks to YouTube before they choose to.
+The live cam section (home and About pages) embeds the 24/7 YouTube live stream. The video ID and channel link are at the top of `js/livecam.js`; if the stream ever gets a new URL, change `videoId` there. YouTube only allows embedding when "Allow embedding" is ticked on the video in YouTube Studio (Content → the live stream → Show more). Until then `LIVECAM.embed` is `false` and the picture links to the stream on YouTube. After enabling embedding, set it to `true`: the player then loads only when a visitor presses play, through `youtube-nocookie.com`.
 
 ## Deploy on GitHub Pages
 

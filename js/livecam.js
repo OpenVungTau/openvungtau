@@ -8,6 +8,9 @@ const LIVECAM = {
   videoId: "-iR3wqKW378", // the 24/7 live stream
   channelUrl: "https://www.youtube.com/@OpenVungTau",
 };
+// Embedding needs "Allow embedding" ticked on the video in YouTube Studio. While it is off, the poster
+// links out to YouTube instead (set to true once embedding is allowed).
+LIVECAM.embed = false;
 LIVECAM.subscribeUrl = `${LIVECAM.channelUrl}?sub_confirmation=1`;
 LIVECAM.watchUrl = `https://www.youtube.com/watch?v=${LIVECAM.videoId}`; // the like button and live chat live here
 LIVECAM.embedUrl = `https://www.youtube-nocookie.com/embed/${LIVECAM.videoId}?autoplay=1&mute=1`;
@@ -68,12 +71,13 @@ LIVECAM.embedUrl = `https://www.youtube-nocookie.com/embed/${LIVECAM.videoId}?au
     const wasPlaying = slot.querySelector(".livecam-frame");
 
     const frame = el("div", "livecam-player");
-    if (wasPlaying) {
+    if (LIVECAM.embed && wasPlaying) {
       play(frame);
     } else {
-      const btn = el("button", "livecam-play");
-      btn.type = "button";
-      btn.setAttribute("aria-label", t("livecam.watch"));
+      // Embedding allowed: a button that swaps in the player. Otherwise: a plain link to the stream.
+      const btn = LIVECAM.embed ? el("button", "livecam-play") : link("livecam-play", LIVECAM.watchUrl, "");
+      if (LIVECAM.embed) btn.type = "button";
+      btn.setAttribute("aria-label", t(LIVECAM.embed ? "livecam.watch" : "livecam.watchOnYoutube"));
       const playBtn = el("span", "livecam-playbtn");
       const tri = document.createElementNS(NS, "svg");
       tri.setAttribute("viewBox", "0 0 24 24");
@@ -86,7 +90,8 @@ LIVECAM.embedUrl = `https://www.youtube-nocookie.com/embed/${LIVECAM.videoId}?au
       tri.append(path);
       playBtn.append(tri);
       btn.append(poster(), el("span", "stamp stamp-live", "LIVE"), playBtn);
-      btn.addEventListener("click", () => play(frame));
+      if (!LIVECAM.embed) btn.append(el("span", "livecam-caption", t("livecam.watchOnYoutube")));
+      if (LIVECAM.embed) btn.addEventListener("click", () => play(frame));
       frame.append(btn);
     }
 
@@ -103,8 +108,9 @@ LIVECAM.embedUrl = `https://www.youtube-nocookie.com/embed/${LIVECAM.videoId}?au
       el("p", null, t("livecam.meet")),
       el("p", "sticky livecam-support", t("livecam.support")),
       actions,
-      el("p", "livecam-privacy", t("livecam.privacy"))
+      el("p", "livecam-privacy", t(LIVECAM.embed ? "livecam.privacy" : "livecam.opens"))
     );
+    // If the stream won't play, point people at the channel.
     const fallback = el("p", "livecam-privacy", t("livecam.fallback") + " ");
     fallback.append(link("", LIVECAM.channelUrl, t("livecam.fallbackLink")));
     text.append(fallback);

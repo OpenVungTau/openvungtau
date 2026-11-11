@@ -129,5 +129,7 @@
   "livecam.privacy": "YouTube only loads when you press play.",
   "livecam.frameTitle": "Vung Tau live cam",
   "livecam.fallback": "Stream not playing here?",
-  "livecam.fallbackLink": "Visit my YouTube channel"
+  "livecam.fallbackLink": "Visit my YouTube channel",
+  "livecam.watchOnYoutube": "Watch live on YouTube",
+  "livecam.opens": "Opens YouTube in a new tab."
 }

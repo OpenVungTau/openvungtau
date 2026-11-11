@@ -129,5 +129,7 @@
   "livecam.privacy": "只有点击播放后才会加载 YouTube。",
   "livecam.frameTitle": "头顿直播镜头",
   "livecam.fallback": "这里无法播放？",
-  "livecam.fallbackLink": "请到我的 YouTube 频道看看"
+  "livecam.fallbackLink": "请到我的 YouTube 频道看看",
+  "livecam.watchOnYoutube": "在 YouTube 观看直播",
+  "livecam.opens": "将在新标签页打开 YouTube。"
 }

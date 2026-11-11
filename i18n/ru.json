@@ -129,5 +129,7 @@
   "livecam.privacy": "YouTube загружается только после нажатия на кнопку.",
   "livecam.frameTitle": "Веб-камера Вунгтау",
   "livecam.fallback": "Трансляция здесь не воспроизводится?",
-  "livecam.fallbackLink": "Загляните на мой канал YouTube"
+  "livecam.fallbackLink": "Загляните на мой канал YouTube",
+  "livecam.watchOnYoutube": "Смотреть эфир на YouTube",
+  "livecam.opens": "YouTube откроется в новой вкладке."
 }

@@ -129,5 +129,7 @@
   "livecam.privacy": "재생 버튼을 누를 때만 YouTube를 불러와요.",
   "livecam.frameTitle": "붕따우 라이브 캠",
   "livecam.fallback": "여기서 재생되지 않나요?",
-  "livecam.fallbackLink": "제 YouTube 채널에 들러 보세요"
+  "livecam.fallbackLink": "제 YouTube 채널에 들러 보세요",
+  "livecam.watchOnYoutube": "YouTube에서 실시간 보기",
+  "livecam.opens": "YouTube가 새 탭에서 열려요."
 }

@@ -759,3 +759,16 @@ dialog::backdrop { background: rgb(20 14 8 / 0.55); }
   color: #B3261E;
   transform: rotate(-4deg);
 }
+.livecam-caption {
+  position: absolute;
+  left: 50%; bottom: 14px;
+  transform: translateX(-50%);
+  max-width: calc(100% - 24px);
+  padding: 6px 14px;
+  background: var(--paper-2);
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}

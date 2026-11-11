@@ -129,5 +129,7 @@
   "livecam.privacy": "YouTube chỉ được tải khi bạn bấm xem.",
   "livecam.frameTitle": "Live cam Vũng Tàu",
   "livecam.fallback": "Xem không được ở đây?",
-  "livecam.fallbackLink": "Ghé kênh YouTube của mình"
+  "livecam.fallbackLink": "Ghé kênh YouTube của mình",
+  "livecam.watchOnYoutube": "Xem trực tiếp trên YouTube",
+  "livecam.opens": "Mở YouTube ở tab mới."
 }
