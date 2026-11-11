@@ -691,3 +691,5 @@ dialog::backdrop { background: rgb(20 14 8 / 0.55); }
   :root:not([data-theme="light"]) .logo-light { display: none; }
   :root:not([data-theme="light"]) .logo-dark { display: block; }
 }
+
+.prose p + p { margin-top: 1em; }
