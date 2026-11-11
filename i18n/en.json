@@ -127,5 +127,7 @@
   "livecam.subscribe": "Subscribe on YouTube",
   "livecam.chat": "Say hi in the live chat",
   "livecam.privacy": "YouTube only loads when you press play.",
-  "livecam.frameTitle": "Vung Tau live cam"
+  "livecam.frameTitle": "Vung Tau live cam",
+  "livecam.fallback": "Stream not playing here?",
+  "livecam.fallbackLink": "Visit my YouTube channel"
 }

@@ -127,5 +127,7 @@
   "livecam.subscribe": "YouTube 구독하기",
   "livecam.chat": "라이브 채팅에서 인사하기",
   "livecam.privacy": "재생 버튼을 누를 때만 YouTube를 불러와요.",
-  "livecam.frameTitle": "붕따우 라이브 캠"
+  "livecam.frameTitle": "붕따우 라이브 캠",
+  "livecam.fallback": "여기서 재생되지 않나요?",
+  "livecam.fallbackLink": "제 YouTube 채널에 들러 보세요"
 }

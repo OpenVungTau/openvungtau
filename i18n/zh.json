@@ -127,5 +127,7 @@
   "livecam.subscribe": "在 YouTube 订阅",
   "livecam.chat": "在直播聊天里打招呼",
   "livecam.privacy": "只有点击播放后才会加载 YouTube。",
-  "livecam.frameTitle": "头顿直播镜头"
+  "livecam.frameTitle": "头顿直播镜头",
+  "livecam.fallback": "这里无法播放？",
+  "livecam.fallbackLink": "请到我的 YouTube 频道看看"
 }

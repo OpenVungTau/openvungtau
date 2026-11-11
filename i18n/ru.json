@@ -127,5 +127,7 @@
   "livecam.subscribe": "Подписаться на YouTube",
   "livecam.chat": "Поздороваться в чате",
   "livecam.privacy": "YouTube загружается только после нажатия на кнопку.",
-  "livecam.frameTitle": "Веб-камера Вунгтау"
+  "livecam.frameTitle": "Веб-камера Вунгтау",
+  "livecam.fallback": "Трансляция здесь не воспроизводится?",
+  "livecam.fallbackLink": "Загляните на мой канал YouTube"
 }

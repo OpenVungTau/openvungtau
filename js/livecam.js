@@ -5,13 +5,12 @@
    so visitors who don't press play never talk to YouTube. */
 
 const LIVECAM = {
-  channelId: "UCzrpDTxJuTrj1AvnYhXnjLg",
+  videoId: "-iR3wqKW378", // the 24/7 live stream
   channelUrl: "https://www.youtube.com/@OpenVungTau",
 };
 LIVECAM.subscribeUrl = `${LIVECAM.channelUrl}?sub_confirmation=1`;
-LIVECAM.liveUrl = `${LIVECAM.channelUrl}/live`; // current stream: where the like button and live chat are
-// The channel-based embed always points at whatever is live right now.
-LIVECAM.embedUrl = `https://www.youtube-nocookie.com/embed/live_stream?channel=${LIVECAM.channelId}&autoplay=1&mute=1`;
+LIVECAM.watchUrl = `https://www.youtube.com/watch?v=${LIVECAM.videoId}`; // the like button and live chat live here
+LIVECAM.embedUrl = `https://www.youtube-nocookie.com/embed/${LIVECAM.videoId}?autoplay=1&mute=1`;
 
 (() => {
   const NS = "http://www.w3.org/2000/svg";
@@ -96,7 +95,7 @@ LIVECAM.embedUrl = `https://www.youtube-nocookie.com/embed/live_stream?channel=$
     const actions = el("div", "livecam-actions");
     actions.append(
       link("btn btn-primary", LIVECAM.subscribeUrl, t("livecam.subscribe")),
-      link("btn", LIVECAM.liveUrl, t("livecam.chat"))
+      link("btn", LIVECAM.watchUrl, t("livecam.chat"))
     );
     text.append(
       title,
@@ -106,6 +105,9 @@ LIVECAM.embedUrl = `https://www.youtube-nocookie.com/embed/live_stream?channel=$
       actions,
       el("p", "livecam-privacy", t("livecam.privacy"))
     );
+    const fallback = el("p", "livecam-privacy", t("livecam.fallback") + " ");
+    fallback.append(link("", LIVECAM.channelUrl, t("livecam.fallbackLink")));
+    text.append(fallback);
 
     slot.className = "livecam";
     slot.replaceChildren(text, frame);
