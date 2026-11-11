@@ -8,9 +8,9 @@ const LIVECAM = {
   videoId: "-iR3wqKW378", // the 24/7 live stream
   channelUrl: "https://www.youtube.com/@OpenVungTau",
 };
-// Embedding needs "Allow embedding" ticked on the video in YouTube Studio. While it is off, the poster
+// Embedding needs "Allow embedding" ticked on the video in YouTube Studio (done). If it is ever turned off, the poster
 // links out to YouTube instead (set to true once embedding is allowed).
-LIVECAM.embed = false;
+LIVECAM.embed = true;
 LIVECAM.subscribeUrl = `${LIVECAM.channelUrl}?sub_confirmation=1`;
 LIVECAM.watchUrl = `https://www.youtube.com/watch?v=${LIVECAM.videoId}`; // the like button and live chat live here
 LIVECAM.embedUrl = `https://www.youtube-nocookie.com/embed/${LIVECAM.videoId}?autoplay=1&mute=1`;
