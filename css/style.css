@@ -678,3 +678,16 @@ dialog::backdrop { background: rgb(20 14 8 / 0.55); }
   .channel-note { grid-column: 2; text-align: left; }
 }
 .suggest-hint { margin-top: 24px; font-size: 0.95rem; }
+
+/* ---------- Logo ---------- */
+
+.brand { display: inline-flex; align-items: center; }
+.logo { display: block; height: 52px; width: auto; }
+@media (min-width: 720px) { .logo { height: 60px; } }
+.logo-dark { display: none; }
+:root[data-theme="dark"] .logo-light { display: none; }
+:root[data-theme="dark"] .logo-dark { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo-light { display: none; }
+  :root:not([data-theme="light"]) .logo-dark { display: block; }
+}
