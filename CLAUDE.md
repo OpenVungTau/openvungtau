@@ -35,5 +35,5 @@ Design check on changed UI files: `.claude/skills/impeccable/scripts/impeccable 
 ## Design rules for this repo
 
 - Reading text stays calm: the notebook world owns the frame (headings, tape, stamps, sticky notes), not the body copy.
-- Small clay-coloured text uses `--clay-ink`; `--clay` is for large display text and fills only.
+- Small clay-coloured text uses `--clay-ink`; `--clay` is for large display text and fills only. Light is the default theme and never follows the OS; dark applies only when the visitor picks it (saved in localStorage).
 - Avoid the design hook's tells (colored side borders above 1px, hard offset shadows, gradient text). Placeholder data in `places.json` is illustrative and must be replaced with real visited places.

@@ -42,25 +42,6 @@
   --shadow: 0 1px 2px rgb(0 0 0 / 0.5), 0 8px 22px rgb(0 0 0 / 0.35);
   --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.5), 0 3px 8px rgb(0 0 0 / 0.3);
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --desk: #18222C;
-    --paper: #262B36;
-    --paper-2: #2F3542;
-    --paper-edge: #3A4150;
-    --ink: #EFE8DA;
-    --ink-muted: #B8B0A6;
-    --clay: #EE8B70;
-    --clay-ink: #F2A892;
-    --sea: #5E9C98;
-    --sticky: #4D4524;
-    --fill: #EE8B70;
-    --fill-ink: #2A1812;
-    --focus: #8ED3CE;
-    --shadow: 0 1px 2px rgb(0 0 0 / 0.5), 0 8px 22px rgb(0 0 0 / 0.35);
-    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.5), 0 3px 8px rgb(0 0 0 / 0.3);
-  }
-}
 
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -182,9 +163,12 @@ a { color: var(--clay-ink); text-underline-offset: 3px; }
   text-underline-offset: 8px;
 }
 
+.lang { position: relative; display: inline-block; }
 .lang select {
+  appearance: none;
+  -webkit-appearance: none;
   min-height: 44px;
-  padding: 0 12px;
+  padding: 0 40px 0 14px;
   font: inherit;
   font-size: 0.95rem;
   color: var(--ink);
@@ -207,10 +191,6 @@ a { color: var(--clay-ink); text-underline-offset: 3px; }
 .icon-sun { display: none; }
 :root[data-theme="dark"] .icon-sun { display: inline; }
 :root[data-theme="dark"] .icon-moon { display: none; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .icon-sun { display: inline; }
-  :root:not([data-theme="light"]) .icon-moon { display: none; }
-}
 
 .btn {
   display: inline-flex;
@@ -445,10 +425,6 @@ a { color: var(--clay-ink); text-underline-offset: 3px; }
 .stamp-community { color: #8A5300; border-style: dashed; }
 :root[data-theme="dark"] .stamp-ok { color: #7FD49A; }
 :root[data-theme="dark"] .stamp-community { color: #F0C36A; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .stamp-ok { color: #7FD49A; }
-  :root:not([data-theme="light"]) .stamp-community { color: #F0C36A; }
-}
 
 .entry-title { font-size: 1.4rem; line-height: 1.25; font-weight: 700; }
 .entry-title button {
@@ -583,9 +559,6 @@ dialog::backdrop { background: rgb(20 14 8 / 0.55); }
   margin-bottom: 4px;
 }
 :root[data-theme="dark"] .sticky-label { color: #F5C9B8; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .sticky-label { color: #F5C9B8; }
-}
 
 .facts { display: grid; grid-template-columns: 1fr; margin: 0; }
 .facts div {
@@ -626,9 +599,6 @@ dialog::backdrop { background: rgb(20 14 8 / 0.55); }
 }
 .note h3 { font-size: 1.4rem; color: var(--clay-ink); margin-bottom: 6px; }
 :root[data-theme="dark"] .note h3 { color: #F5C9B8; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .note h3 { color: #F5C9B8; }
-}
 .about-actions { justify-content: flex-start; margin-top: 36px; }
 
 /* ---------- Footer ---------- */
@@ -687,10 +657,6 @@ dialog::backdrop { background: rgb(20 14 8 / 0.55); }
 .logo-dark { display: none; }
 :root[data-theme="dark"] .logo-light { display: none; }
 :root[data-theme="dark"] .logo-dark { display: block; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .logo-light { display: none; }
-  :root:not([data-theme="light"]) .logo-dark { display: block; }
-}
 
 .prose p + p { margin-top: 1em; }
 
@@ -771,4 +737,18 @@ dialog::backdrop { background: rgb(20 14 8 / 0.55); }
   font-weight: 700;
   text-align: center;
   box-shadow: var(--shadow-sm);
+}
+
+.lang::after {                          /* chevron, with room between it and the edge */
+  content: "";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  width: 12px;
+  height: 8px;
+  margin-top: -4px;
+  background: var(--ink);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
+  pointer-events: none;
 }

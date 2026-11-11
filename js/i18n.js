@@ -119,7 +119,7 @@ const OVT = (() => {
   function currentTheme() {
     const set = document.documentElement.dataset.theme;
     if (set === "light" || set === "dark") return set;
-    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    return "light"; // light is the default; dark only when the visitor picks it
   }
 
   function syncThemeButton() {
