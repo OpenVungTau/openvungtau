@@ -118,5 +118,14 @@
   "suggest.whatsapp": "Nhắn Sơn qua WhatsApp",
   "suggest.telegram": "Nhắn Sơn qua Telegram",
   "suggest.github": "Sửa data/places.json rồi mở pull request",
-  "suggest.close": "Đóng"
+  "suggest.close": "Đóng",
+  "livecam.title": "Trực tiếp từ Vũng Tàu, 24/7",
+  "livecam.lead": "Live cam của mình chiếu thời tiết và thủy triều ở Vũng Tàu cả ngày lẫn đêm. Bạn có thể xem biển trước khi ra ngoài, hoặc cứ mở sẵn để ngắm một góc bờ biển.",
+  "livecam.meet": "Đây cũng là chỗ nhỏ để làm quen. Hãy để lại lời chào trong live chat và gặp những người đang ở đây, hoặc đang định đến.",
+  "livecam.support": "Ủng hộ mình nhé: bình luận trong live chat, bấm thích và đăng ký kênh. Mình chưa bật được kiếm tiền vì kênh còn rất nhỏ, nên mỗi lời chào đều có ý nghĩa :)",
+  "livecam.watch": "Xem live cam",
+  "livecam.subscribe": "Đăng ký kênh YouTube",
+  "livecam.chat": "Chào trong live chat",
+  "livecam.privacy": "YouTube chỉ được tải khi bạn bấm xem.",
+  "livecam.frameTitle": "Live cam Vũng Tàu"
 }

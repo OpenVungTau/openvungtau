@@ -118,5 +118,14 @@
   "suggest.whatsapp": "Message Son on WhatsApp",
   "suggest.telegram": "Message Son on Telegram",
   "suggest.github": "Edit data/places.json and open a pull request",
-  "suggest.close": "Close"
+  "suggest.close": "Close",
+  "livecam.title": "Live from Vung Tau, 24/7",
+  "livecam.lead": "My live cam shows the weather and the tides over Vung Tau all day and night. Check the sea before you go out, or just keep it open for a view of the coast.",
+  "livecam.meet": "It is also a small place to say hi. Drop a comment in the live chat and meet other people who are here, or thinking about coming.",
+  "livecam.support": "Help me out: comment in the live chat, like the stream and subscribe. I can't turn on monetisation yet because the channel is very small, so every hello counts :)",
+  "livecam.watch": "Watch the live cam",
+  "livecam.subscribe": "Subscribe on YouTube",
+  "livecam.chat": "Say hi in the live chat",
+  "livecam.privacy": "YouTube only loads when you press play.",
+  "livecam.frameTitle": "Vung Tau live cam"
 }

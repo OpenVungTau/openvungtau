@@ -24,12 +24,17 @@ css/style.css     notebook look (light/dark, mobile-first)
 js/i18n.js        language (remembered), theme, header links, shared by both pages
 js/app.js         places page logic
 js/suggest.js     "Suggest a place" widget (Zalo, WhatsApp, Telegram, GitHub)
+js/livecam.js     live cam section (YouTube channel, loaded only on click)
 i18n/<lang>.json  every UI string and the About text, one file per language
 data/places.json  all place data
 images/           logo files (logo-horizontal*.png, icon.png) and photos used by places
 ```
 
 `REPO_URL` at the top of `js/i18n.js` is the GitHub repository. The contact channels in the "Suggest a place" widget are listed at the top of `js/suggest.js`; every URL there must be `https`.
+
+## Live cam
+
+The live cam section (home and About pages) embeds the YouTube channel's current live stream. The channel ID and links are at the top of `js/livecam.js`. The player loads only after a visitor presses play, through `youtube-nocookie.com`, so nobody talks to YouTube before they choose to.
 
 ## Deploy on GitHub Pages
 

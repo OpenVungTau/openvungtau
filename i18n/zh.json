@@ -118,5 +118,14 @@
   "suggest.whatsapp": "用 WhatsApp 给 Son 发消息",
   "suggest.telegram": "用 Telegram 给 Son 发消息",
   "suggest.github": "编辑 data/places.json 并提交 pull request",
-  "suggest.close": "关闭"
+  "suggest.close": "关闭",
+  "livecam.title": "头顿实时直播，全天 24 小时",
+  "livecam.lead": "我的直播镜头全天候展示头顿的天气和潮汐。出门前看看海况，或者就开着，欣赏一角海岸风景。",
+  "livecam.meet": "这里也是一个打招呼的小角落。在直播聊天里留言，认识正在头顿或打算来的朋友。",
+  "livecam.support": "请支持我：在直播聊天里留言，点赞并订阅频道。频道还很小，暂时无法开通收益，所以每一句问候都很重要 :)",
+  "livecam.watch": "观看直播",
+  "livecam.subscribe": "在 YouTube 订阅",
+  "livecam.chat": "在直播聊天里打招呼",
+  "livecam.privacy": "只有点击播放后才会加载 YouTube。",
+  "livecam.frameTitle": "头顿直播镜头"
 }

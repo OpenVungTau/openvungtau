@@ -118,5 +118,14 @@
   "suggest.whatsapp": "WhatsApp으로 Son에게 메시지 보내기",
   "suggest.telegram": "Telegram으로 Son에게 메시지 보내기",
   "suggest.github": "data/places.json을 수정하고 풀 리퀘스트 열기",
-  "suggest.close": "닫기"
+  "suggest.close": "닫기",
+  "livecam.title": "붕따우 실시간, 24/7",
+  "livecam.lead": "제 라이브 캠은 붕따우의 날씨와 조수를 밤낮없이 보여 줘요. 나가기 전에 바다를 확인하거나, 그냥 켜 두고 해안 풍경을 즐겨 보세요.",
+  "livecam.meet": "인사를 나누는 작은 공간이기도 해요. 라이브 채팅에 댓글을 남기고, 지금 여기 있거나 올 계획인 사람들을 만나 보세요.",
+  "livecam.support": "응원해 주세요: 라이브 채팅에 댓글, 좋아요, 구독! 채널이 아직 아주 작아서 수익 창출을 켤 수 없어요. 인사 한마디가 큰 힘이 돼요 :)",
+  "livecam.watch": "라이브 캠 보기",
+  "livecam.subscribe": "YouTube 구독하기",
+  "livecam.chat": "라이브 채팅에서 인사하기",
+  "livecam.privacy": "재생 버튼을 누를 때만 YouTube를 불러와요.",
+  "livecam.frameTitle": "붕따우 라이브 캠"
 }
