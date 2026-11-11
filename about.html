@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="about.title">Hi, I'm Son</title>
+  <meta name="description" data-i18n-content="meta.description" content="Verified cafes, restaurants, stays and coworking spots in Vung Tau, Vietnam, from someone who lives there. For expats, nomads and travellers.">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("ovt-theme");
+        if (saved === "light" || saved === "dark") document.documentElement.dataset.theme = saved;
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Patrick+Hand&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/i18n.js" defer></script>
+</head>
+<body>
+  <div class="sheet">
+    <header class="site-header">
+      <a class="brand" href="index.html">openvungtau</a>
+      <nav class="site-nav" data-i18n-label="nav.label" aria-label="Main">
+        <a href="index.html" data-i18n="nav.places">Places</a>
+        <a href="about.html" aria-current="page" data-i18n="nav.about">About Son</a>
+        <label class="lang">
+          <span class="visually-hidden" data-i18n="nav.lang">Language</span>
+          <select id="lang-select"><option value="en">English</option></select>
+        </label>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+            <path class="icon-moon" d="M21 14.5A9 9 0 0 1 9.5 3a9 9 0 1 0 11.5 11.5Z" fill="currentColor"/>
+            <g class="icon-sun" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+            </g>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main class="about">
+      <section class="hero">
+        <div class="hero-text">
+          <h1 class="hand" data-i18n="about.title">Hi, I'm Son</h1>
+          <p class="lead" data-i18n="about.lead">I've lived in Vung Tau for almost a year. This site is my notebook, and you're welcome to use it as a guide for travelling, living and getting through everyday life here.</p>
+        </div>
+        <div class="hero-photos" aria-hidden="true">
+          <figure class="polaroid polaroid-a">
+            <span class="tape"></span>
+            <svg viewBox="0 0 240 180" role="presentation">
+              <rect width="240" height="180" fill="#A9D3CE"/>
+              <circle cx="168" cy="62" r="26" fill="#F2B45A"/>
+              <rect y="96" width="240" height="84" fill="#5B97A0"/>
+              <path d="M0 118h240M0 138h240M0 158h240" stroke="#E9F3EF" stroke-width="3" stroke-dasharray="26 18" fill="none"/>
+            </svg>
+          </figure>
+        </div>
+      </section>
+
+      <div class="prose">
+        <h2 class="hand" data-i18n="about.h1">Why this site exists</h2>
+        <p data-i18n="about.p1">I moved to Vung Tau almost a year ago. Since then I've eaten at a lot of places and sat in a lot of cafes. Friends and strangers kept asking where to go, so I started writing it down. This is that notebook: restaurants, street food, cafes, hotels and guesthouses, for anyone staying for a weekend or for months.</p>
+
+        <h2 class="hand" data-i18n="about.h2">How I choose</h2>
+        <p data-i18n="about.p2">I only mark a place Verified by Son after I've been there myself, and I note the month I visited. Places suggested by readers show as Community until I've checked them. I tell you what to order, what to skip, and whether the wifi is good enough to work.</p>
+
+        <h2 class="hand" data-i18n="about.h3">Nothing hidden</h2>
+        <p data-i18n="about.p3">Everything on this site lives in a public file on GitHub, so every change is visible. There is no database and no hidden backend.</p>
+
+        <h2 class="hand" data-i18n="about.h4">Help me add more</h2>
+        <p data-i18n="about.p4">Know a place that should be here? Suggest it on GitHub, or edit data/places.json and open a pull request. The guide is in the README.</p>
+
+        <aside class="note">
+          <h3 class="hand" data-i18n="about.areasTitle">Area names</h3>
+          <p data-i18n="about.areasText">Bãi Trước is Front Beach, Bãi Sau is Back Beach, Bãi Dâu is Dau Beach. Phường 1, Phường 2 and Phường Thắng Tam are central districts. I keep the Vietnamese names so you can read them on signs and tell your driver.</p>
+        </aside>
+
+        <div class="empty-actions about-actions">
+          <a class="btn btn-primary" data-suggest-link href="#" rel="noopener" target="_blank" data-i18n="about.cta">Suggest a place</a>
+          <a class="btn" href="index.html" data-i18n="about.back">Browse the places</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.note">Every entry lives in a public file on GitHub, so every change is visible. Prices, hours and wifi change, so check before you go.</p>
+      <p class="footer-links">
+        <a data-repo-link href="#" rel="noopener" target="_blank" data-i18n="nav.github">GitHub</a>
+        <a data-suggest-link href="#" rel="noopener" target="_blank" data-i18n="nav.suggest">Suggest a place</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

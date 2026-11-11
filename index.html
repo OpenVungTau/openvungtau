@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">openvungtau – Son's notebook of Vung Tau</title>
+  <meta name="description" data-i18n-content="meta.description" content="Verified cafes, restaurants, stays and coworking spots in Vung Tau, Vietnam, from someone who lives there. For expats, nomads and travellers.">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    // Apply saved theme before first paint to avoid a flash.
+    (function () {
+      try {
+        var saved = localStorage.getItem("ovt-theme");
+        if (saved === "light" || saved === "dark") document.documentElement.dataset.theme = saved;
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Patrick+Hand&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/i18n.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#results" data-i18n="skip">Skip to places</a>
+
+  <div class="sheet">
+    <header class="site-header">
+      <a class="brand" href="index.html">openvungtau</a>
+      <nav class="site-nav" data-i18n-label="nav.label" aria-label="Main">
+        <a href="index.html" aria-current="page" data-i18n="nav.places">Places</a>
+        <a href="about.html" data-i18n="nav.about">About Son</a>
+        <label class="lang">
+          <span class="visually-hidden" data-i18n="nav.lang">Language</span>
+          <select id="lang-select"><option value="en">English</option></select>
+        </label>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+            <path class="icon-moon" d="M21 14.5A9 9 0 0 1 9.5 3a9 9 0 1 0 11.5 11.5Z" fill="currentColor"/>
+            <g class="icon-sun" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+            </g>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h1 class="hand" data-i18n="hero.title">Hi, I'm Son. I've lived in Vung Tau for almost a year, and these are the places I like.</h1>
+          <p class="lead" data-i18n="hero.lead">A small notebook of cafes, food and places to stay. Open it whenever you're here, for a weekend or for months.</p>
+          <p class="sign hand" data-i18n="hero.sign">Son</p>
+        </div>
+        <div class="hero-photos" aria-hidden="true">
+          <figure class="polaroid polaroid-a">
+            <span class="tape"></span>
+            <svg viewBox="0 0 240 180" role="presentation">
+              <rect width="240" height="180" fill="#A9D3CE"/>
+              <circle cx="168" cy="62" r="26" fill="#F2B45A"/>
+              <rect y="96" width="240" height="84" fill="#5B97A0"/>
+              <path d="M0 118h240M0 138h240M0 158h240" stroke="#E9F3EF" stroke-width="3" stroke-dasharray="26 18" fill="none"/>
+            </svg>
+          </figure>
+          <figure class="polaroid polaroid-b">
+            <span class="tape tape-b"></span>
+            <svg viewBox="0 0 240 180" role="presentation">
+              <rect width="240" height="180" fill="#E9A287"/>
+              <path d="M0 120c40-26 80-26 120 0s80 26 120 0v60H0z" fill="#C8553D"/>
+              <circle cx="82" cy="70" r="20" fill="#F7E3B8"/>
+            </svg>
+          </figure>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Search and filters">
+        <div class="search">
+          <label class="visually-hidden" for="search" data-i18n="search.label">Search places</label>
+          <input id="search" type="search" data-i18n-placeholder="search.placeholder" placeholder="Search by name, dish or address" autocomplete="off" enterkeyhint="search">
+        </div>
+
+        <div class="filter-group" role="group" aria-labelledby="fg-category">
+          <span class="filter-label" id="fg-category" data-i18n="filters.type">Type</span>
+          <div class="chips" id="category-chips"></div>
+        </div>
+        <div class="filter-group" role="group" aria-labelledby="fg-area">
+          <span class="filter-label" id="fg-area" data-i18n="filters.area">Area</span>
+          <div class="chips" id="area-chips"></div>
+        </div>
+        <div class="filter-group" role="group" aria-labelledby="fg-quick">
+          <span class="filter-label" id="fg-quick" data-i18n="filters.quick">Quick</span>
+          <div class="chips" id="toggle-chips"></div>
+        </div>
+      </section>
+
+      <div class="results-bar">
+        <p id="result-count" role="status" aria-live="polite"></p>
+        <button class="link-btn" id="reset-filters" type="button" hidden data-i18n="clear">Clear filters</button>
+      </div>
+
+      <section id="results" class="entries" aria-label="Places" tabindex="-1"></section>
+
+      <div id="empty-state" class="empty" hidden>
+        <h2 class="hand" data-i18n="empty.title">No places match</h2>
+        <p data-i18n="empty.text">Try a different word, or remove a filter. Know a spot that should be here?</p>
+        <div class="empty-actions">
+          <button class="btn" id="empty-reset" type="button" data-i18n="clear">Clear filters</button>
+          <a class="btn btn-primary" data-suggest-link href="#" rel="noopener" target="_blank" data-i18n="nav.suggest">Suggest a place</a>
+        </div>
+      </div>
+
+      <div id="error-state" class="empty" hidden>
+        <h2 class="hand" data-i18n="error.title">Couldn't load places</h2>
+        <p id="error-text" data-i18n="error.fetch">The place list failed to load. If you opened this file directly, serve the folder over HTTP instead (for example: python3 -m http.server).</p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.note">Every entry lives in a public file on GitHub, so every change is visible. Prices, hours and wifi change, so check before you go.</p>
+      <p class="footer-links">
+        <a data-repo-link href="#" rel="noopener" target="_blank" data-i18n="nav.github">GitHub</a>
+        <a data-suggest-link href="#" rel="noopener" target="_blank" data-i18n="nav.suggest">Suggest a place</a>
+      </p>
+    </footer>
+  </div>
+
+  <dialog id="detail" aria-labelledby="detail-title">
+    <article class="detail-body">
+      <button class="icon-btn detail-close" id="detail-close" type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+          <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div id="detail-content"></div>
+    </article>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,104 @@
+[
+  {
+    "id": "bien-xanh-work-cafe",
+    "name": "Biển Xanh Work Café",
+    "category": "cafe",
+    "area": "bai_sau",
+    "address": "12 Thùy Vân, Phường Thắng Tam, Vũng Tàu",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=Bi%E1%BB%83n+Xanh+Work+Caf%C3%A9+Th%C3%B9y+V%C3%A2n+V%C5%A9ng+T%C3%A0u",
+    "price_range": "$$",
+    "opening_hours": {
+      "en": "07:00–22:00 daily",
+      "vi": "07:00–22:00 hằng ngày",
+      "ko": "매일 07:00–22:00",
+      "zh": "每天 07:00–22:00",
+      "ru": "ежедневно 07:00–22:00"
+    },
+    "nomad_features": {
+      "good_for_work": true,
+      "wifi_speed_mbps": 60,
+      "power_outlets": "plentiful",
+      "noise_level": "quiet",
+      "air_conditioned": true,
+      "has_outdoor": true
+    },
+    "expat_friendly": {
+      "staff_english": "basic",
+      "english_menu": true,
+      "payment_methods": {
+        "cash": true,
+        "vietnam_qr": true,
+        "international_cards": true
+      }
+    },
+    "verification": {
+      "status": "verified_by_son",
+      "visited_date": "2026-10",
+      "must_try": {
+        "en": "Salted coffee (cà phê muối) and the cold-brew tonic",
+        "vi": "Cà phê muối và cold brew tonic",
+        "ko": "소금 커피(cà phê muối)와 콜드브루 토닉",
+        "zh": "海盐咖啡(cà phê muối)和冷萃汤力水",
+        "ru": "Кофе с солью (cà phê muối) и колд-брю тоник"
+      },
+      "local_tip": {
+        "en": "Sit upstairs by the window for the best outlets. Weekday mornings are the quietest; it fills up with local students after 17:00.",
+        "vi": "Ngồi tầng trên cạnh cửa sổ để có nhiều ổ cắm nhất. Sáng ngày thường yên tĩnh nhất; sau 17:00 quán đông học sinh, sinh viên.",
+        "ko": "2층 창가 자리에 앉으면 콘센트가 가장 많아요. 평일 오전이 가장 조용하고, 오후 5시 이후에는 현지 학생들로 붐벼요.",
+        "zh": "坐在二楼靠窗的位置，插座最多。工作日上午最安静，下午5点以后会挤满本地学生。",
+        "ru": "Садитесь наверху у окна: там больше всего розеток. Тише всего в будни утром, а после 17:00 кафе заполняют местные студенты."
+      }
+    }
+  },
+  {
+    "id": "banh-khot-goc-vu-sua",
+    "name": "Bánh Khọt Gốc Vú Sữa",
+    "category": "street_food",
+    "area": "phuong_1",
+    "address": "14 Nguyễn Trường Tộ, Phường 1, Vũng Tàu",
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&query=B%C3%A1nh+Kh%E1%BB%8Dt+G%E1%BB%91c+V%C3%BA+S%E1%BB%AFa+Nguy%E1%BB%85n+Tr%C6%B0%E1%BB%9Dng+T%E1%BB%99+V%C5%A9ng+T%C3%A0u",
+    "price_range": "$",
+    "opening_hours": {
+      "en": "09:00–21:00 daily",
+      "vi": "09:00–21:00 hằng ngày",
+      "ko": "매일 09:00–21:00",
+      "zh": "每天 09:00–21:00",
+      "ru": "ежедневно 09:00–21:00"
+    },
+    "nomad_features": {
+      "good_for_work": false,
+      "wifi_speed_mbps": null,
+      "power_outlets": "none",
+      "noise_level": "loud",
+      "air_conditioned": false,
+      "has_outdoor": true
+    },
+    "expat_friendly": {
+      "staff_english": "none",
+      "english_menu": false,
+      "payment_methods": {
+        "cash": true,
+        "vietnam_qr": true,
+        "international_cards": false
+      }
+    },
+    "verification": {
+      "status": "community_suggested",
+      "visited_date": "2026-09",
+      "must_try": {
+        "en": "Bánh khọt (mini crispy shrimp pancakes), one portion is about 6 pieces",
+        "vi": "Bánh khọt, một phần khoảng 6 cái",
+        "ko": "바인콧(미니 새우 팬케이크), 1인분은 약 6개",
+        "zh": "越南小煎饼 bánh khọt（虾饼），一份约6个",
+        "ru": "Бань кхот (мини-блинчики с креветками), порция около 6 штук"
+      },
+      "local_tip": {
+        "en": "Wrap each pancake in lettuce and herbs, then dip in the sweet fish sauce. Point at the table next to you to order; no menu in English.",
+        "vi": "Cuốn mỗi cái bánh với xà lách và rau thơm rồi chấm nước mắm ngọt. Không có menu tiếng Anh, bạn cứ chỉ vào bàn bên cạnh để gọi món.",
+        "ko": "상추와 허브로 하나씩 싸서 달콤한 느억맘 소스에 찍어 드세요. 영어 메뉴가 없으니 옆 테이블을 가리켜 주문하세요.",
+        "zh": "用生菜和香草把每块饼包起来，蘸甜鱼露吃。没有英文菜单，可以指着邻桌的菜点单。",
+        "ru": "Заворачивайте каждый блинчик в салат и зелень и макайте в сладкий рыбный соус. Меню на английском нет — покажите пальцем на блюдо за соседним столом."
+      }
+    }
+  }
+]

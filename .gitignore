@@ -1,0 +1,7 @@
+.impeccable/hook.cache.json
+.impeccable/mocks/
+.impeccable/questions/
+.impeccable/review/
+.claude/settings.local.json
+.claude/skills/impeccable/scripts/bin/
+.DS_Store
